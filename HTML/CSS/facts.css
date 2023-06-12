@@ -4,16 +4,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: yellow;
-  min-height: 100vh; /* Ensure the body fills the viewport height */
+  min-height: 100vh; /* Ensures the body fills the viewport height */
   display: flex;
-  flex-direction: column; /* Align child elements vertically */
+  flex-direction: column; /* Aligns child elements vertically */
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  flex-grow: 1; /* Allow the container to grow and fill available space */
+  flex-grow: 1; /* Allows the container to grow and fill available space */
 }
 
 h1 {
@@ -27,7 +27,7 @@ h2 {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  text-align: left; /* Align the subheading to the left */
+  text-align: left; /* Aligns the subheading to the left */
 }
 
 .tabs {
