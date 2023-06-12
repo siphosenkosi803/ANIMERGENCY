@@ -1,0 +1,93 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey; /* Set the background color of the body */
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page wrapper takes up the full viewport height */
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    background-color: yellow; /* Set the background color of the page wrapper */
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 31px; /* Increase the font size by 35% */
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; /* Change the font to League Gothic */
+    text-align: center; /* Align the main heading centrally */
+  }
+  
+  h1 .icon {
+    display: inline-block;
+    width: 20px; /* Adjust the width of the icon */
+    height: 20px; /* Adjust the height of the icon */
+    background-image: url("C:\Users\sipho\Desktop\PROJECT\BUILD\ANIMERGENCY\HTML\_f560435f_3722_442e_9526_41ba43f429ad_v7t_icon.ico"); /* Replace "path/to/icon.png" with the actual path to your icon image */
+    background-size: cover;
+    margin-right: 10px; /* Add some space between the icon and the text */
+    vertical-align: middle;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #888;
+    text-align: center; /* Align the subheading text to the right */
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent; /* Remove the background color of the tabs */
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Horizon', sans-serif; /* Change the font to Horizon */
+    font-weight: bold; /* Make the tabs bold */
+    background-color: #eee;
+    border: none; /* Remove the border */
+  }
+  
+  .tab.active {
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; /* Align the image centrally */
+    margin-top: 20px; /* Add margin to the top of the image container */
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .content {
+    flex-grow: 1;
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    background-color: yellow; /* Set the background color of the content */
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: green; /* Set the background color of the footer */
+  }
+  

@@ -1,0 +1,82 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: yellow; /* Set the background color of the whole page to yellow */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px; /* Added margin-bottom */
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: black; /* Change the subheading color to black */
+  text-align: left; /* Align the subheading to the right */
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; /* Center the scenes tab */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px; /* Added margin-bottom */
+  background-color: red; /* Change the background color of the tabs to red */
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: red; /* Change the background color of the tabs to red */
+  font-weight: bold;
+  border-radius: 60px; /* Make the edges of the tab round */
+}
+
+.tab.active {
+  background-color: red; /* Change the background color of the active tab to red */
+  font-weight: bold;
+}
+
+.upload-bar {
+  margin-bottom: 20px; /* Added margin-bottom */
+}
+
+.upload-bar input[type="file"] {
+  display: none;
+}
+
+.upload-bar label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.image-container {
+  float: right;
+  margin-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: green; /* Set the background color of the footer to green */
+}

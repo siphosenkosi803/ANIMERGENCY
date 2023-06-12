@@ -1,0 +1,54 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: left; /* Align the subheading text to the left */
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; /* Center the tab text */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: red;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: red;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab.active {
+  background-color: #eee;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: green;
+}

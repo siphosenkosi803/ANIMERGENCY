@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ANIMERGENCY - Scenes</title>
+  <link rel="stylesheet" href="CSS/scenes.css">
+  <style>
+    /* Additional CSS */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      background-color: green;
+      color: white;
+    }
+
+    /* Additional CSS for the "return to home" button */
+    .back-button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: greenyellow;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-button a:hover {
+      background-color: orange;
+      color: #fff;
+    }
+  </style>
+  <script src="scenes.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="back-button">
+      <a href="entry.html">Home</a>
+    </div>
+    <div class="tabs">
+      <!-- Remove the "BACK" tab -->
+      <div class="tab" onclick="loadScenes()">SCENES</div>
+    </div>
+    <h1>ANIMERGENCY</h1>
+    <h2>Upload image from device</h2>
+
+    <div class="upload-bar">
+      <input type="file" id="image-upload" accept="image/*">
+      <label for="image-upload">Choose Image</label>
+    </div>
+
+    <div class="image-container">
+      <img src="scenesimg.jpg" alt="Uploaded Image">
+    </div>
+  </div>
+
+  <footer>
+    powered by trace.moe
+  </footer>
+</body>
+</html>

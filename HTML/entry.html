@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ANIMERGENCY</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <style>
+    /* Your existing CSS styles */
+    /* Add the following CSS code */
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the page wrapper takes up the full viewport height */
+      overflow-y: auto; /* Add vertical scrollbar when content overflows */
+      background-color: yellow; /* Set the background color of the page wrapper */
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 20px;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 31px; /* Increase the font size by 35% */
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; /* Change the font to League Gothic */
+      text-align: center; /* Align the main heading centrally */
+    }
+
+    h1 .icon {
+      display: inline-block;
+      width: 50px; /* Adjust the width of the icon */
+      height: 50px; /* Adjust the height of the icon */
+      background-image: url("asicon.jpg"); /* Replace "path/to/icon.png" with the actual path to your icon image */
+      background-size: cover;
+      margin-right: 20px; /* Add some space between the icon and the text */
+      vertical-align: middle;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      color: black;
+      text-align: center; /* Align the subheading text to the right */
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      background-color: transparent; /* Remove the background color of the tabs */
+    }
+
+    .tab {
+      cursor: pointer;
+      padding: 10px 20px;
+      font-family: 'Horizon', sans-serif; /* Change the font to Horizon */
+      font-weight: bold; /* Make the tabs bold */
+      background-color: red; /* Set the background color of the tabs to red */
+      border: none; /* Remove the border */
+      border-radius: 10px; /* Add rounded edges to the tabs */
+    }
+
+    .tab.active {
+      background-color: blueviolet;
+      font-weight: bold;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align the image centrally */
+      margin-top: 20px; /* Add margin to the top of the image container */
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .content {
+      flex-grow: 1;
+      overflow-y: auto; /* Add vertical scrollbar when content overflows */
+      background-color: yellow; /* Set the background color of the content */
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px 0;
+      background-color: green; /* Set the background color of the footer */
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    // Function to load scenes.html content
+function loadScenes() {
+  $.ajax({
+    url: "HTML/scenes.html",
+    cache: false,
+    success: function(response) {
+      $("body").html(response);
+    }
+  });
+}
+
+// Function to load facts.html content
+function loadFacts() {
+  $.ajax({
+    url: "HTML/facts.html",
+    cache: false,
+    success: function(response) {
+      $("body").html(response);
+    }
+  });
+}
+
+// Function to load quotes.html content
+function loadQuotes() {
+  $.ajax({
+    url: "HTML/quotes.html",
+    cache: false,
+    success: function(response) {
+      $("body").html(response);
+    }
+  });
+}
+
+  </script> 
+    
+</head>
+<body>
+  <div class="page-wrapper"> <!-- Add a page wrapper -->
+    <div class="container">
+      <div class="tabs">
+        <div id="scenes-tab" class="tab" onclick="loadScenes()">SCENES</div>
+        <div id="quotes-tab" class="tab" onclick="loadQuotes()">QUOTES</div>
+        <div id="facts-tab" class="tab" onclick="loadFacts()">FACTS</div>
+      </div>
+      <h1>
+        <span class="icon"></span>
+        ANIMERGENCY
+      </h1>
+      <h2>Explore and rediscover the wonderful world of anime through your favorite scenes, quotes, and facts.</h2> <!-- Update the subheading text -->
+
+      <div class="content">
+        <!-- Content of the current active tab will be loaded dynamically -->
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <img src="HTML/landing.jpg" alt="Anime Image" style="max-width: 100%;">
+      </div>
+
+      <footer>
+        <p>© 2023 1heavy0.tech</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
