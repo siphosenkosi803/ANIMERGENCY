@@ -1,5 +1,4 @@
 # ANIMERGENCY
-# ANIMERGENCY
 
 ANIMERGENCY is a web application designed to provide anime enthusiasts with a seamless and immersive experience. It offers a range of features including scene search, fact search, and quote search, allowing users to explore and engage with their favorite anime content.
 
@@ -7,9 +6,8 @@ ANIMERGENCY is a web application designed to provide anime enthusiasts with a se
 
 To learn more about the ANIMERGENCY project, please visit the following links:
 
-- [Deployed Site](https://www.animergency.com)
-- [Final Project Blog Article](https://www.animergency.com/blog)
-- [Author's LinkedIn](https://www.linkedin.com/in/siphosenkosi-mlotshwa)
+- [Final Project Blog Article](https://www.linkedin.com/pulse/animergency-exploring-anime-scenes-facts-quotes-sipho-mlotshwa%3FtrackingId=ik77Stx%252BoTgfb45zqOBegg%253D%253D/?trackingId=ik77Stx%2BoTgfb45zqOBegg%3D%3D)
+- [Author's LinkedIn](https://www.linkedin.com/in/sipho-mlotshwa/)
 
 ## Installation
 
